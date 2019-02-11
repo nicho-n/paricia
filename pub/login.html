@@ -1,0 +1,45 @@
+<html>
+<head>		
+   <style>
+	pre{
+        	color:white;
+	}
+	#play{
+		position: absolute;
+		margin-top:3px;
+		left:100px;
+	
+	}
+	#usernameprompt{
+		position:absolute;
+		left:75px;
+	}
+   </style>
+</head>
+   
+<pre>
+    __               __     _          _____
+   / /   ____  _____/ /_   (_)___     / ___/____  ____ _________
+  / /   / __ \/ ___/ __/  / / __ \    \__ \/ __ \/ __ `/ ___/ _ \
+ / /___/ /_/ (__  ) /_   / / / / /   ___/ / /_/ / /_/ / /__/  __/
+/_____/\____/____/\__/  /_/_/ /_/   /____/ .___/\__,_/\___/\___/
+                                        /_/
+         A multiplayer game: get lost with your friends!!
+                       Move        : wasd
+                       Look Around : Arrow keys
+</pre>
+<input id = "usernameprompt" placeholder="please enter a username.."></input>
+<button id = "play" style="margin-left: 200px; margin-bottom:3px;" onclick="connect()">Try?</button>
+
+</html>
+<script>
+function connect(){        
+        var chat = window.parent.document.getElementById("chat");
+        var prompt = document.getElementById("usernameprompt");
+        var popup = window.parent.document.getElementById("logintop");
+        var ok = window.parent.document.getElementById("login");
+        chat.contentWindow.postMessage(prompt.value, 'http://localhost:3004');
+        parent.loadPlayer(prompt.value);
+
+}
+</script>

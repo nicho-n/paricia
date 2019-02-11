@@ -1,0 +1,46 @@
+body{
+	background-color: black;
+	position: absolute;
+	bottom:0px;
+	background-color: black;
+	color: white;
+	font-family: Monospace;
+	border: 1px solid white;
+}
+
+#bottom{
+	position: absolute;
+	bottom: 0px;
+	
+}
+
+#input{	
+	position: absolute;
+	width: 445px;
+	bottom:2px;
+        left:50px;
+	background-color:grey;
+	color: white;
+}
+
+#action{
+	position: absolute;
+	left: 3px;
+	bottom: 2px;
+	width:43px;
+	height:20px;
+	text-align: center;
+	border: 1px solid white;
+}
+
+#send{
+	color: black;
+	background-color: grey;
+}
+
+#channel{
+	position: absolute;
+	left: 4px;
+	top: 3px;
+	color: orange;
+}

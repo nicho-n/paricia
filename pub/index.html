@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>random space trading sim (pre-alpha)</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				background:#000;
+				color: #eee;
+				padding:0;
+				margin:0;
+				font-weight:bold;
+				overflow:hidden;
+				font-family:Monospace;
+				font-size:13px;
+				text-align:center;
+			}
+			#info {
+				position: absolute;
+				top: 0px; width: 100%;
+				padding: 5px;
+				z-index:100;
+			}
+			#welcome{
+				display: none;
+			}
+			#ok {
+				font-size: 9px;
+				color: cyan;
+				position: absolute;
+                                bottom: 36px;
+                                left: 253px;
+                                height: 270px;
+                                width: 105px;
+                                resize:both;
+                                z-index: 102;
+                                border: 1px solid white;
+
+			}
+
+			#chat{
+    				position: absolute;
+				bottom: 10px;
+				left: 10px;
+				height: 300px;
+				width: 351px;
+				resize:both;
+				z-index: 101;
+				border: 1px solid white;
+			}
+
+			#clickArea{
+				position:absolute;
+    				top:0;
+    				bottom: 0;
+   				left: 0;
+   				right: 0;
+  				margin: auto;
+				z-index: 200;
+				height: 50%;
+				width: 40%;
+
+			}
+
+			#usernameprompt{
+				position: absolute;
+                                bottom:18px;
+                                left: 295px;
+			}
+                        #play{
+				position: absolute;
+				left: 125px;
+				bottom: 1px;
+				
+			}
+			#messages{
+				position:absolute;
+				left:0px;
+			}
+			#input{
+				position:absolute;
+				bottom:0px;
+				background-color: #ffffff;
+			}
+			#message{
+				position:absolute;
+				right:0px;
+			}
+
+			#minimap{
+				position: absolute;
+				width: 351px;
+				height: 300px;
+				border: 1px solid white;
+				top: 4px;
+				left: 4px;
+				z-index: 300;
+				background-color: black;
+			]
+			#send{
+				position:absolute;
+				bottom:0px;
+				right:10px;
+				background-color: black;
+				color:white;
+	
+			}
+
+			a {
+				color: #0080ff;
+			}
+			b { color:orange }
+		</style>
+		
+		<link rel="stylesheet" href="window.css">
+		<script src="js/three.js"></script>
+		<script src="js/OBJLoader.js"></script>
+		<script src="js/controls/FlyControls.js"></script>
+
+		<script src="js/shaders/CopyShader.js"></script>
+		<script src="js/shaders/FilmShader.js"></script>
+
+		<script src="js/postprocessing/EffectComposer.js"></script>
+		<script src="js/postprocessing/ShaderPass.js"></script>
+		<script src="js/postprocessing/MaskPass.js"></script>
+		<script src="js/postprocessing/RenderPass.js"></script>
+		<script src="js/postprocessing/FilmPass.js"></script>
+
+		<script src="js/Detector.js"></script>
+		<script src="js/libs/stats.min.js"></script>
+	        <script src="/socket.io/socket.io.js"></script>
+                <script src="commodity.js"></script>
+                <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+ 		<script src="chatbox.js"></script>
+		<script src="player.js"></script>
+                <script src="stars.js"></script>
+		<script src="WindowPane.js"></script>
+                <script src="newlasers.js"></script>
+		<script src="Station.js"></script>
+	</head>
+
+	<body>
+        <script src = "login.js"></script>
+	<div id="game">
+		<div id="info"><b>position:<span id = "pos"></span></b>
+		</div>
+		<div id="clickArea"></div>
+		<div id= "ok">
+		Players Online:
+		<br>
+		</div>
+		<iframe id="chat" src="chatbox.html">
+		</iframe>	
+
+	</body>
+</html>
+       
+                <script src="main3.js"></script>
+
+
