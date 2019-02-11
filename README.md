@@ -1,4 +1,4 @@
 # paricia
-browser based multiplayer space trading game with sci-fi narrative
+half-baked browser based multiplayer space trading game with sci-fi narrative
 
 ![alt text](https://github.com/nicho-n/paricia/blob/master/screenshot.png)
