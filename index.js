@@ -43,8 +43,8 @@ io.on('connection', function(socket){
      io.emit('message', username + ' has joined the game.');
   });
 
-  socket.on('position change', function(position){
-        players[socket.id] = position;
+  socket.on('position change', function(player){
+        players[socket.id].position = player.position;
 	playerTuple = [];
 	playerTuple.push(socket.id);
 	playerTuple.push(position);
